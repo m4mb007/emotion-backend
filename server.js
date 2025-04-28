@@ -7,6 +7,10 @@ const Emosi = require('./models/Emosi');
 const User = require('./models/User');
 const bcrypt = require('bcryptjs');
 const emosiList = [];
+const cors = require('cors');
+
+// Gunakan middleware CORS
+app.use(cors());
 
 // Middleware
 app.use(express.json());
